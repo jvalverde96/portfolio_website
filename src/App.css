@@ -1,38 +1,216 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ========================================== CSS Variables  ========================================== */
+
+:root {
+  /* === Font === */
+  --font-family: "Poppins", sans-serif;
+
+  /* === Typography === */
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.5rem;
+  --h1-font-size-mobile: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --xsmall-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+
+  /* === Colors === */
+  --title-color: #E0E0E0;
+  --hue: 0;
+  --saturation: 0%;
+  /* --title-color: hsl(var(--hue), var(--saturation), 80%); */
+  --title-color-dark: hsl(var(--hue), var(--saturation), 100%);
+  --text-color: hsl(var(--hue), var(--saturation), 100%, 0.6);
+  --body-color: hsl(var(--hue), var(--saturation), 80%);
+  --background-light: #fff;
+  --background-dark: #000000;
+  --secondary-background-dark: #100e12;
+  --button-text: #fff;
+  --primary-color: #ff6f00;
+
+   /* #0ffa07 */
+  /* #affa00 */
+  /* #ff6a00 */
+
+  /* === Hamburger Menu === */
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+}
+
+  /* === Responsive Typography === */
+@media screen and (max-width: 946px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.940rem;
+    --small-font-size: 0.817rem;
+    --xsmall-font-size: 0.75rem;
+  }
+}
+
+/* ========================================== Base CSS  ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  /* background-color: var(--background-dark); */
+  /* color: white */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, button, input, textarea {
+  font-family: var(--font-family);
+  font-size: var(--normal-font-size);
+}
+
+
+h1, h2, h3 {
+  color: var(--title-color-dark);
+  font-weight: var(--font-weight-normal);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} 
+
+/* ========================================== Reusable CSS Classes  ========================================== */
+
+.section {
+  padding: 5.25rem 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section_title {
+  font-size: var(--h1-font-size);
+}
+
+.section_subtitle {
+  font-size: var(--h3-font-size);
+}
+
+.section_title, .section_subtitle {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section_title_left {
+  text-align: left;
+  font-size: var(--h1-font-size);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.background_primary {
+  background-color: var(--background-dark);
+}
+
+.background_secondary {
+  background-color: var(--secondary-background-dark);
+}
+
+.primary_text {
+  color: #ffffff;
+  opacity: 0.75;
+  text-align: justify;
+  line-height: 2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  /* height: 100%; */
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.small_emoji {
+  font-size: 18px;
+}
+
+.medium_emoji {
+  font-size: var(--h2-font-size);
+}
+
+.big_emoji {
+  font-size: var(--h1-font-size);
+}
+
+/* ========================================== Breakpoints  ========================================== */
+
+/* Large devices  */
+
+@media screen and (max-width: 1240px) {
+  .container {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+}
+
+/* Medium devices  */
+
+@media screen and (max-width: 822px) {
+  .section_title_left {
+    text-align: center;
+    font-size: var(--h1-font-size-mobile);
+  }
+
+  .container {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 567px) {
+
+  .section_title {
+    font-size: var(--h1-font-size-mobile);
+  }
+
+  .container {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+}
+
+/* Small devices  */
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin: 0 1rem 0 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,0 +1,43 @@
+/* --------------------- Base Button Styles --------------------- */
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    font-size: 0.75rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 2rem var(--primary-color);
+}
+
+.icon_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    font-size: 1rem;
+    background: transparent;
+}
+
+.button:disabled {
+    background-color: rgba(238, 238, 238, 0.2);
+    opacity: 0.5;
+    cursor: not-allowed;
+    color: #fff;
+    box-shadow: none;
+}
+
+.button:disabled:hover {
+    transform: none;
+}
