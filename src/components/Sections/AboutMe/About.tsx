@@ -54,7 +54,7 @@ const AboutMe = () => {
             </p>
             <div className="download_button_container">
               <a
-                href="https://drive.google.com/uc?export=download&id=1uHsIEnJZyJZQH0N8l3qoUVObIjq2BSRA"
+                href="https://drive.google.com/uc?export=download&id=1yJvHTKFiIcgvgnshe3sQxg9nqChg6mb4"
                 download
               >
                 <Button
