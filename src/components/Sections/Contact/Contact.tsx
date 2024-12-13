@@ -80,6 +80,7 @@ const Contact = () => {
           transition: Zoom,
         },
       )
+      clearForm()
     } catch (error: any) {
       console.error('Error sending email:', error.text || error)
       toast.error('Failed to send the message. Please try again.', {
@@ -98,6 +99,13 @@ const Contact = () => {
     }
   }
 
+  const clearForm = () => {
+    const form = document.getElementById('contact_form') as HTMLFormElement
+    if (form && form instanceof HTMLFormElement) {
+      form.reset()
+    }
+  }
+
   return (
     <section className="section background_primary" id="contact">
       <div className="container">
@@ -108,7 +116,7 @@ const Contact = () => {
             </h1>
             <h2 className="section_subtitle">Let's Talk</h2>
           </div>
-          <form ref={formRef} onSubmit={sendEmail}>
+          <form ref={formRef} onSubmit={sendEmail} id="contact_form">
             <div style={{ width: '100%' }}>
               <div className="input_box">
                 <input
