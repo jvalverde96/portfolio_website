@@ -1,5 +1,5 @@
 .footer {
-    border-top: 1px solid rgba(238, 238, 238, 0.2);
+    border-top: 1px solid var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,7 @@
     bottom: 0;
     width: 100%;
     padding: 2rem 0 1rem;
-    background-color: var(--background-dark);
+    /* background-color: var(--background-dark); */
 }
 
 .footer ul {

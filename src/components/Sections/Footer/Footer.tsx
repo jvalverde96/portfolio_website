@@ -4,7 +4,7 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer background_secondary">
       <Social />
       <ul>
         {SECTIONS.map((item) => (

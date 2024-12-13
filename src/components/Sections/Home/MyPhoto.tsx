@@ -1,4 +1,4 @@
-import me from '../../../assets/home.png'
+import me from '../../../assets/me/home.png'
 import { motion } from 'framer-motion'
 
 const MyPhoto = () => {

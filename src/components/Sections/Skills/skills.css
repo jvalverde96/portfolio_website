@@ -1,7 +1,7 @@
 .skills_content {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 5rem;
 }
 
 .skills_container {
@@ -11,24 +11,23 @@
 }
 
 .skill_box {
-    flex: 1 1 30rem;
     background-color: var(--secondary-background-dark);
-    padding: 3rem 2rem;
+    padding: 2rem 1.5rem 5rem 1.5rem;
     border-radius: 2rem;
     text-align: center;
     transition: .5s ease;
-    aspect-ratio: 1;
-    max-width: 370px;
+    max-width: 400px;
     max-height: 500px;
-    width: 370px;
     height: 420px;
+    border: 3px solid var(--secondary-color);
 }
 
 .skill_box:hover,
 .languages_container:hover {
     cursor: pointer;
-    box-shadow: 0 0 2rem var(--primary-color);
+    box-shadow: 0 0 3.125rem var(--primary-color);
     transform: scaleX(1.02);
+    border: 3px solid var(--primary-color);
 }
 
 .skill_box h2 {
@@ -91,18 +90,4 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-
-    .skills_content {
-        gap: 2rem;
-    }
-}
-
-/* Small devices  */
-
-@media screen and (max-width: 567px) {
-
-    .languages_container {
-        width: 100%;
-    }
-
 }

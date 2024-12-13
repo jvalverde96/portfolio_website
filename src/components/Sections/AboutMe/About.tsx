@@ -1,5 +1,5 @@
 import './about.css'
-import me from '../../../assets/about.png'
+import me from '../../../assets/me/about.png'
 import Button from '../../shared/Button/Button'
 import { FaCloudDownloadAlt } from 'react-icons/fa'
 
@@ -22,7 +22,7 @@ const AboutMe = () => {
   }
 
   return (
-    <section className="section background_secondary" id="about">
+    <section className="section background_primary" id="about">
       <div className="container">
         <div className="about_content">
           <img alt="" src={me} />

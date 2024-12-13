@@ -48,12 +48,12 @@ const TestimonialsData = [
 
 const Testimonials = () => {
   return (
-    <section className="section background_secondary" id="testimonials">
+    <section className="section background_primary" id="testimonials">
       <div className="container">
         <div className="testimonials_content">
           <div>
             <h1 className="section_title">Testimonials</h1>
-            <h2>
+            <h2 className="section_subtitle">
               What People Say About <span>Me</span>
             </h2>
           </div>

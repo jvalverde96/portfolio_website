@@ -106,7 +106,7 @@ const Contact = () => {
             <h1 className="section_title">
               Contact <span>Me</span>
             </h1>
-            <h2>Let's Talk</h2>
+            <h2 className="section_subtitle">Let's Talk</h2>
           </div>
           <form ref={formRef} onSubmit={sendEmail}>
             <div style={{ width: '100%' }}>

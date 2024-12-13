@@ -31,7 +31,7 @@
 }
 
 .button:disabled {
-    background-color: rgba(238, 238, 238, 0.2);
+    background-color: var(--secondary-color);
     opacity: 0.5;
     cursor: not-allowed;
     color: #fff;

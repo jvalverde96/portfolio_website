@@ -10,7 +10,7 @@
   --big-font-size: 3.5rem;
   --h1-font-size: 2.5rem;
   --h1-font-size-mobile: 2rem;
-  --h2-font-size: 1.5rem;
+  --h2-font-size: 1rem;
   --h3-font-size: 1rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
@@ -22,18 +22,11 @@
   --font-weight-semi-bold: 600;
 
   /* === Colors === */
-  --title-color: #E0E0E0;
-  --hue: 0;
-  --saturation: 0%;
-  /* --title-color: hsl(var(--hue), var(--saturation), 80%); */
-  --title-color-dark: hsl(var(--hue), var(--saturation), 100%);
-  --text-color: hsl(var(--hue), var(--saturation), 100%, 0.6);
-  --body-color: hsl(var(--hue), var(--saturation), 80%);
-  --background-light: #fff;
+  --title-color: hsl(0, 0%, 100%);
   --background-dark: #000000;
   --secondary-background-dark: #100e12;
-  --button-text: #fff;
   --primary-color: #ff6f00;
+  --secondary-color: rgba(238, 238, 238, 0.2);
 
   /* === Hamburger Menu === */
   --bar-width: 60px;
@@ -74,7 +67,7 @@ body, button, input, textarea {
 }
 
 h1, h2, h3 {
-  color: var(--title-color-dark);
+  color: var(--title-color);
   font-weight: var(--font-weight-normal);
 }
 
@@ -110,10 +103,12 @@ img {
 
 .section_title {
   font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .section_subtitle {
   font-size: var(--h3-font-size);
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .section_title, .section_subtitle {
@@ -121,8 +116,8 @@ img {
 }
 
 .section_title_left {
-  text-align: left;
   font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .background_primary {
@@ -135,7 +130,6 @@ img {
 
 .primary_text {
   color: #ffffff;
-  opacity: 0.75;
   text-align: justify;
   line-height: 2;
 }
@@ -143,7 +137,6 @@ img {
 .container {
   max-width: 1200px;
   margin: auto;
-  /* height: 100%; */
 }
 
 .grid {

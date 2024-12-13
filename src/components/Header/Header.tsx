@@ -9,7 +9,7 @@ import NavLink from '../shared/NavLink/NavLink'
 const Header = () => {
   const [openHamburgerMenu, setOpenHamburgerMenu] = useState<boolean>(false)
 
-  const { currentSection, setCurrentSection } = useAppContext()
+  const { setCurrentSection } = useAppContext()
 
   const { width } = useWindowSize()
 
@@ -51,12 +51,6 @@ const Header = () => {
                   }}
                 >
                   <NavLink value={item.value}>{item.label}</NavLink>
-                  {/* <a
-                    className={`nav_link ${
-                      item.value === currentSection ? 'nav_link_active' : ''
-                    }`}
-                    href={item.href}
-                  ></a> */}
                 </li>
               ))}
             </ul>
