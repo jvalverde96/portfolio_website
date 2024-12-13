@@ -6,7 +6,6 @@
 .tooltip-box {
     position: absolute;
     bottom: 100%;
-    /* Position above the element */
     margin-bottom: 10px;
     left: 50%;
     transform: translateX(-50%);

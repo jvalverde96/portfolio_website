@@ -35,10 +35,6 @@
   --button-text: #fff;
   --primary-color: #ff6f00;
 
-   /* #0ffa07 */
-  /* #affa00 */
-  /* #ff6a00 */
-
   /* === Hamburger Menu === */
   --bar-width: 60px;
   --bar-height: 8px;
@@ -76,7 +72,6 @@ body, button, input, textarea {
   font-family: var(--font-family);
   font-size: var(--normal-font-size);
 }
-
 
 h1, h2, h3 {
   color: var(--title-color-dark);

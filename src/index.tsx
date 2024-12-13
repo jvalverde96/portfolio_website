@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import { ToastContainer, Zoom } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css' // Import default styles
+import 'react-toastify/dist/ReactToastify.css'
 import { AppContextProvider } from './context/AppContextProvider'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
