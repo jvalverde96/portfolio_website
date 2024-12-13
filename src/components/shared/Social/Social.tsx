@@ -22,7 +22,7 @@ const socials: SocialItem[] = [
   },
   {
     icon: <MdEmail className="icon" />,
-    href: 'mailto:curly.dev.96@gmail.com />',
+    href: 'mailto:curly.dev.96@gmail.com',
     tooltip: 'Email',
   },
 ]
