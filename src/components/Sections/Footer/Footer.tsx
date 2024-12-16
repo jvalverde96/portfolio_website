@@ -13,7 +13,10 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-      <p className="copyright">© Javier Valverde | All Rights Reserved</p>
+      <div className="legends">
+        <p className="designed_by">Designed and developed by me with ❤️</p>
+        <p className="copyright">© Javier Valverde | All Rights Reserved</p>
+      </div>
     </footer>
   )
 }

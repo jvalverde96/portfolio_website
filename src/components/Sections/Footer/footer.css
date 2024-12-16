@@ -9,7 +9,6 @@
     bottom: 0;
     width: 100%;
     padding: 2rem 0 1rem;
-    /* background-color: var(--background-dark); */
 }
 
 .footer ul {
@@ -29,10 +28,21 @@
     border-bottom: 2px solid var(--primary-color);
 }
 
-.copyright {
-    margin-top: 20px;
-    font-size: 10px;
+.designed_by {
+    /* margin-top: 20px; */
+    font-size: 8px;
     color: #fff;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.legends {
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* Large devices  */
