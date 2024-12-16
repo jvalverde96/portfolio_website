@@ -7,6 +7,10 @@ import { toast, Zoom } from 'react-toastify'
 const Contact = () => {
   const [loading, setLoading] = useState<boolean>(false)
 
+  console.log('emailServiceId: ', process.env.REACT_APP_EMAIL_SERVICE_ID)
+  console.log('emailTemplateId: ', process.env.REACT_APP_EMAIL_TEMPLATE_ID)
+  console.log('publicKey: ', process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+
   const formRef = useRef<HTMLFormElement>(null)
 
   const sendEmail = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
