@@ -25,8 +25,11 @@
   --title-color: hsl(0, 0%, 100%);
   --background-dark: #000000;
   --secondary-background-dark: #100e12;
-  --primary-color: #ff6f00;
+  --primary-color: oklch(.457 .24 277.023);
   --secondary-color: rgba(238, 238, 238, 0.2);
+
+  /* 00011c */
+  /* #ff6f00 */
 
   /* === Hamburger Menu === */
   --bar-width: 60px;
