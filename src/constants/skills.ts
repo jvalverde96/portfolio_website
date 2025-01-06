@@ -106,6 +106,12 @@ export const BACKEND_SKILLS: Skill[] = [
     height: 40,
   },
   {
+    name: 'Nest.js',
+    image: require('../assets/skills/nest.png'),
+    width: 40,
+    height: 40,
+  },
+  {
     name: 'Node.js',
     image: require('../assets/skills/node-js.png'),
     width: 40,
@@ -120,12 +126,6 @@ export const BACKEND_SKILLS: Skill[] = [
   {
     name: 'PostgreSQL',
     image: require('../assets/skills/postgresql.png'),
-    width: 40,
-    height: 40,
-  },
-  {
-    name: 'Postman',
-    image: require('../assets/skills/postman.png'),
     width: 40,
     height: 40,
   },
@@ -153,6 +153,12 @@ export const OTHER_SKILLS: Skill[] = [
   {
     name: 'GitHub',
     image: require('../assets/skills/github.png'),
+    width: 40,
+    height: 40,
+  },
+  {
+    name: 'Postman',
+    image: require('../assets/skills/postman.png'),
     width: 40,
     height: 40,
   },
