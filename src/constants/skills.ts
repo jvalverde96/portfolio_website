@@ -157,8 +157,20 @@ export const OTHER_SKILLS: Skill[] = [
     height: 40,
   },
   {
+    name: 'Jest',
+    image: require('../assets/skills/jest.png'),
+    width: 40,
+    height: 40,
+  },
+  {
     name: 'Postman',
     image: require('../assets/skills/postman.png'),
+    width: 40,
+    height: 40,
+  },
+  {
+    name: 'Selenium',
+    image: require('../assets/skills/selenium.png'),
     width: 40,
     height: 40,
   },
