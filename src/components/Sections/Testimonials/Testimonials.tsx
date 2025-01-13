@@ -30,13 +30,15 @@ const TestimonialsData = [
     text: `Javier's initiative and proactive approach were evident in every project we tackled together. He was always the first to step up for challenging tasks and consistently delivered high-quality results. In addition to his technical expertise, Javier's soft skills are equally impressive. He is an excellent listener, an empathetic team player, and always willing to support his colleagues. His positive attitude and dedication to continuous learning make him an exceptional professional.`,
     image: require('../../../assets/testimonials/yordan.jpeg'),
   },
-  // {
-  //   id: 5,
-  //   name: 'Ankita Kamble',
-  //   role: 'UI/UX Designer',
-  //   text: 'Magnam quia atque perspiciatis placeat corrupti eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. t amet consectetur adipisicing elit. t amet consectetur adipisicing elitt amet consectetur adipisicing elit',
-  //   image: require('../../../assets/testimonials/ankita.jpeg'),
-  // },
+  {
+    id: 5,
+    name: 'Ankita Kamble',
+    role: 'UI/UX Designer',
+    text: `I had the pleasure of working with Javier, and he is among the most talented developers I’ve collaborated with. His technical skills and problem-solving abilities always stood out, and he consistently delivered high-quality work.
+Javier is not only talented but also a great team player. He is always willing to share knowledge, help others, and ensure the team’s success. I appreciated his design recommendations and his ability to pay attention to detail. 
+I highly recommend Javier to any team. He is skilled, dependable, and a great person to work with.`,
+    image: require('../../../assets/testimonials/ankita.jpeg'),
+  },
   {
     id: 4,
     name: 'Andrés Romero',
