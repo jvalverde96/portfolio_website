@@ -20,7 +20,6 @@
 }
 
 .description {
-    
     font-size: var(--small-font-size);
     font-style: italic;
     opacity: 0.75;
@@ -40,8 +39,8 @@
 
 .circle_container {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 490px;
+    height: 490px;
 }
 
 .animated_circle {
@@ -58,7 +57,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden; 
-    border-radius: 50%;
+    border-radius: 100%;
     z-index: 1;
     mix-blend-mode: lighten;
 }
@@ -68,7 +67,7 @@
 
 /* Medium devices  */
 
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1200px) {
 
     .home_content {
         flex-direction: column-reverse;

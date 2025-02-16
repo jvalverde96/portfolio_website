@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 const MyPhoto = () => {
   const rootStyles = getComputedStyle(document.documentElement)
   const primaryColor = rootStyles.getPropertyValue('--primary-color').trim()
+
   return (
     <div className="circle_container">
       <motion.div
@@ -27,7 +28,7 @@ const MyPhoto = () => {
           cy={253}
           r={250}
           stroke={primaryColor}
-          strokeWidth={4}
+          strokeWidth={6}
           strokeLinecap="round"
           strokeLinejoin="round"
           initial={{ strokeDasharray: '24 10 0 0' }}
