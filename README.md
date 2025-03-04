@@ -5,6 +5,7 @@ Welcome to my **Personal Portfolio**! This website showcases my skills and exper
 ## Features
 - 🧑‍💻 Overview of my **skills** and **technologies**  
 - ✉️ Contact form to reach out for collaborations or opportunities  
+- 📥 **Download my CV** directly from the website  
 - 💻 Fully responsive design, optimized for both mobile and desktop  
 
 ## 🛠 Tech Stack
