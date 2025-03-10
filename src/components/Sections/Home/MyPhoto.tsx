@@ -2,8 +2,8 @@ import me from '../../../assets/me/home.png'
 import { motion } from 'framer-motion'
 
 const MyPhoto = () => {
-  const rootStyles = getComputedStyle(document.documentElement)
-  const primaryColor = rootStyles.getPropertyValue('--primary-color').trim()
+  // const rootStyles = getComputedStyle(document.documentElement)
+  // const primaryColor = rootStyles.getPropertyValue('--primary-color').trim()
 
   return (
     <div className="circle_container">
