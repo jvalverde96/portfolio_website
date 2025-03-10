@@ -27,7 +27,7 @@ const MyPhoto = () => {
           cx={253}
           cy={253}
           r={250}
-          stroke={primaryColor}
+          stroke={'#000000'}
           strokeWidth={6}
           strokeLinecap="round"
           strokeLinejoin="round"
